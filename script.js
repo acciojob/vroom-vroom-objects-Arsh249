@@ -6,17 +6,17 @@ function Car(make, model) {
 
 Car.prototype.getMakeModel = () =>{
 	return (make, model);
-}
+};
 
 function SportsCar(make, model, topSpeed) {
 	Car.call(this,make,model);
 	this.topSpeed = topSpeed
 }
-Object.setPrototypeOf(SportsCar.prototype,Car.prototype);
+Object.setPrototypeOf(Car.prototype,SportsCar.prototype);
 
 SportsCar.prototype.getTopSpeed = ()=>{
 	return topSpeed;
-}
+};
 
 // Do not change the code below
 window.Car = Car;
