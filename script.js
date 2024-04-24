@@ -5,7 +5,7 @@ function Car(make, model) {
 }
 
 Car.prototype.getMakeModel = () =>{
-	return (make, model);
+	return (this.make, this.model);
 };
 
 function SportsCar(make, model, topSpeed) {
@@ -15,7 +15,7 @@ function SportsCar(make, model, topSpeed) {
 Object.setPrototypeOf(SportsCar.prototype,Car.prototype);
 
 SportsCar.prototype.getTopSpeed = ()=>{
-	return topSpeed;
+	return this.topSpeed;
 };
 
 // Do not change the code below
