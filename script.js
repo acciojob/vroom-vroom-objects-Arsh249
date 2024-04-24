@@ -12,7 +12,7 @@ function SportsCar(make, model, topSpeed) {
 	Car.call(this,make,model);
 	this.topSpeed = topSpeed
 }
-Object.setPrototypeOf(SportsCar,Car);
+Object.setPrototypeOf(SportsCar.prototype,Car.prototype);
 
 SportsCar.prototype.getTopSpeed = ()=>{
 	return topSpeed;
