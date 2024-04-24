@@ -5,7 +5,7 @@ function Car(make, model) {
 }
 
 Car.prototype.getMakeModel = () =>{
-	return (this.make, this.model);
+	return this.make + ' ' + this.model;
 };
 
 function SportsCar(make, model, topSpeed) {
